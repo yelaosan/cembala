@@ -1,0 +1,11 @@
+<template name="vol-item">
+  <view class="vol-card">
+    <image class="vol-picture" src="{{item.hp_img_url}}" mode="aspectFill" style="height: {{item.height}}px"></image>
+    <view class="vol-meta">
+      <text class="vol-number">{{item.hp_title}}</text>
+    </view>
+    <view class="vol-content">
+      <text class="vol-content-text">{{item.hp_content}}</text>
+    </view>
+  </view>
+</template>

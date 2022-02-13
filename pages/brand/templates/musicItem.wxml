@@ -1,0 +1,21 @@
+<template name="music-item">
+  <scroll-view class="music" scroll-y="true">
+    <view class="music-container">
+      <view class="music-cover">
+        <image class="music-cover-image" src="http://ojv3h31y1.bkt.clouddn.com/japanese-tea-1-1548839.jpg" mode="aspectFill"></image>
+      </view>
+      <view class="music-control">
+          <image class="music-author-avatar" src="../../image/avator.jpg" mode="aspectFill"></image>
+          <view class="music-author-username">
+            <text>陈发来</text>
+          </view>
+          <view class="music-author-desc">
+            <text style="font-size:14px;">香巴拉创始人，07年“茶通擂台赛”状元</text>
+          </view>
+      </view>
+      <view class="music-content">
+        <include wx:if="{{item.contentType === 'story'}}" src="../includes/story.wxml"/>
+      </view>
+    </view>
+  </scroll-view>
+</template>
